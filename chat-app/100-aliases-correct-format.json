@@ -1,0 +1,604 @@
+{
+  "System Aliases": [
+    {
+      "aliasName": "nd",
+      "command": "npm run dev",
+      "frequency": 0,
+      "description": "start development server"
+    },
+    {
+      "aliasName": "ns",
+      "command": "npm run start",
+      "frequency": 0,
+      "description": "start project"
+    },
+    {
+      "aliasName": "nb",
+      "command": "npm run build",
+      "frequency": 0,
+      "description": "build production bundle"
+    },
+    {
+      "aliasName": "nt",
+      "command": "npm test",
+      "frequency": 0,
+      "description": "run tests once"
+    },
+    {
+      "aliasName": "nwt",
+      "command": "npm run watch",
+      "frequency": 0,
+      "description": "run tests in watch mode"
+    },
+    {
+      "aliasName": "nl",
+      "command": "npm run lint",
+      "frequency": 0,
+      "description": "lint code"
+    },
+    {
+      "aliasName": "nfs",
+      "command": "npm run format:sort-imports",
+      "frequency": 0,
+      "description": "format & sort imports"
+    },
+    {
+      "aliasName": "nf",
+      "command": "npm run format",
+      "frequency": 0,
+      "description": "format code"
+    },
+    {
+      "aliasName": "nci",
+      "command": "npm ci",
+      "frequency": 0,
+      "description": "clean install deps"
+    },
+    {
+      "aliasName": "nr",
+      "command": "npm run release",
+      "frequency": 0,
+      "description": "build & bump version"
+    },
+    {
+      "aliasName": "na",
+      "command": "npm audit fix --force",
+      "frequency": 0,
+      "description": "auto‑fix vulnerabilities"
+    },
+    {
+      "aliasName": "npmg",
+      "command": "npm install -g",
+      "frequency": 0,
+      "description": "install global package"
+    },
+    {
+      "aliasName": "nglok",
+      "command": "npm run start -- --open",
+      "frequency": 0,
+      "description": "start and open browser"
+    },
+    {
+      "aliasName": "nps",
+      "command": "npm run prettier:check",
+      "frequency": 0,
+      "description": "check formatting"
+    },
+    {
+      "aliasName": "npsf",
+      "command": "npm run prettier:fix",
+      "frequency": 0,
+      "description": "auto‑fix formatting"
+    },
+    {
+      "aliasName": "nid",
+      "command": "npm install --save-dev",
+      "frequency": 0,
+      "description": "add dev‑dependency"
+    },
+    {
+      "aliasName": "nidp",
+      "command": "npm install --save-dev prettier eslint typescript",
+      "frequency": 0,
+      "description": "install dev‑tools"
+    },
+    {
+      "aliasName": "yd",
+      "command": "yarn dev",
+      "frequency": 0,
+      "description": "yarn start in dev mode"
+    },
+    {
+      "aliasName": "ys",
+      "command": "yarn start",
+      "frequency": 0,
+      "description": "start server / app"
+    },
+    {
+      "aliasName": "yb",
+      "command": "yarn build",
+      "frequency": 0,
+      "description": "build project"
+    },
+    {
+      "aliasName": "yt",
+      "command": "yarn test",
+      "frequency": 0,
+      "description": "run tests"
+    },
+    {
+      "aliasName": "yla",
+      "command": "yarn lint",
+      "frequency": 0,
+      "description": "lint code"
+    },
+    {
+      "aliasName": "yft",
+      "command": "yarn format",
+      "frequency": 0,
+      "description": "format with prettier"
+    },
+    {
+      "aliasName": "yli",
+      "command": "yarn install",
+      "frequency": 0,
+      "description": "install deps"
+    },
+    {
+      "aliasName": "ypc",
+      "command": "yarn create next-app .",
+      "frequency": 0,
+      "description": "create Next.js app"
+    },
+    {
+      "aliasName": "ypg",
+      "command": "yarn global add",
+      "frequency": 0,
+      "description": "install global tool"
+    },
+    {
+      "aliasName": "pnvd",
+      "command": "pnpm dev",
+      "frequency": 0,
+      "description": "pnpm dev run mode"
+    },
+    {
+      "aliasName": "gco",
+      "command": "git checkout",
+      "frequency": 0,
+      "description": "switch branch"
+    },
+    {
+      "aliasName": "gcb",
+      "command": "git checkout -b",
+      "frequency": 0,
+      "description": "create & checkout branch"
+    },
+    {
+      "aliasName": "gb",
+      "command": "git branch",
+      "frequency": 0,
+      "description": "list branches"
+    },
+    {
+      "aliasName": "ga",
+      "command": "git add",
+      "frequency": 0,
+      "description": "stage files"
+    },
+    {
+      "aliasName": "gaa",
+      "command": "git add --all",
+      "frequency": 0,
+      "description": "stage all changes"
+    },
+    {
+      "aliasName": "gc",
+      "command": "git commit",
+      "frequency": 0,
+      "description": "commit staged changes"
+    },
+    {
+      "aliasName": "gca",
+      "command": "git commit --amend",
+      "frequency": 0,
+      "description": "amend last commit"
+    },
+    {
+      "aliasName": "gpsh",
+      "command": "git push",
+      "frequency": 0,
+      "description": "push current branch"
+    },
+    {
+      "aliasName": "gpu",
+      "command": "git push -u origin HEAD",
+      "frequency": 0,
+      "description": "set upstream & push"
+    },
+    {
+      "aliasName": "gpl",
+      "command": "git pull",
+      "frequency": 0,
+      "description": "pull latest changes"
+    },
+    {
+      "aliasName": "gl",
+      "command": "git log --oneline --graph --decorate",
+      "frequency": 0,
+      "description": "pretty log"
+    },
+    {
+      "aliasName": "gst",
+      "command": "git status",
+      "frequency": 0,
+      "description": "show worktree status"
+    },
+    {
+      "aliasName": "gcm",
+      "command": "git commit -m",
+      "frequency": 0,
+      "description": "commit with message"
+    },
+    {
+      "aliasName": "gd",
+      "command": "git diff",
+      "frequency": 0,
+      "description": "show differences"
+    },
+    {
+      "aliasName": "grs",
+      "command": "git reset --hard",
+      "frequency": 0,
+      "description": "discard local changes"
+    },
+    {
+      "aliasName": "drun",
+      "command": "docker run --rm -it",
+      "frequency": 0,
+      "description": "run container interactively"
+    },
+    {
+      "aliasName": "dbuild",
+      "command": "docker build -t myapp .",
+      "frequency": 0,
+      "description": "build docker image"
+    },
+    {
+      "aliasName": "dps",
+      "command": "docker ps",
+      "frequency": 0,
+      "description": "list running containers"
+    },
+    {
+      "aliasName": "dpsa",
+      "command": "docker ps -a",
+      "frequency": 0,
+      "description": "list all containers"
+    },
+    {
+      "aliasName": "dlogs",
+      "command": "docker logs -f",
+      "frequency": 0,
+      "description": "follow container logs"
+    },
+    {
+      "aliasName": "drmi",
+      "command": "docker rmi",
+      "frequency": 0,
+      "description": "remove image"
+    },
+    {
+      "aliasName": "drmc",
+      "command": "docker rm $(docker ps -aq)",
+      "frequency": 0,
+      "description": "remove all containers"
+    },
+    {
+      "aliasName": "dprune",
+      "command": "docker system prune -f",
+      "frequency": 0,
+      "description": "clean docker resources"
+    },
+    {
+      "aliasName": "dcp",
+      "command": "docker-compose up -d",
+      "frequency": 0,
+      "description": "compose up in background"
+    },
+    {
+      "aliasName": "dcb",
+      "command": "docker-compose build",
+      "frequency": 0,
+      "description": "compose build services"
+    },
+    {
+      "aliasName": "k",
+      "command": "kubectl",
+      "frequency": 0,
+      "description": "alias to kubectl"
+    },
+    {
+      "aliasName": "kgp",
+      "command": "kubectl get pods",
+      "frequency": 0,
+      "description": "list pods"
+    },
+    {
+      "aliasName": "kgs",
+      "command": "kubectl get svc",
+      "frequency": 0,
+      "description": "list services"
+    },
+    {
+      "aliasName": "kdp",
+      "command": "kubectl describe pod",
+      "frequency": 0,
+      "description": "describe pod details"
+    },
+    {
+      "aliasName": "klogs",
+      "command": "kubectl logs -f",
+      "frequency": 0,
+      "description": "tail pod logs"
+    },
+    {
+      "aliasName": "kexec",
+      "command": "kubectl exec -it",
+      "frequency": 0,
+      "description": "exec into pod"
+    },
+    {
+      "aliasName": "kdel",
+      "command": "kubectl delete",
+      "frequency": 0,
+      "description": "delete resource by type/name"
+    },
+    {
+      "aliasName": "kctx",
+      "command": "kubectl config use-context",
+      "frequency": 0,
+      "description": "switch context"
+    },
+    {
+      "aliasName": "kfwd",
+      "command": "kubectl port-forward",
+      "frequency": 0,
+      "description": "forward port"
+    },
+    {
+      "aliasName": "kapply",
+      "command": "kubectl apply -f",
+      "frequency": 0,
+      "description": "apply YAML config"
+    },
+    {
+      "aliasName": "py",
+      "command": "python3",
+      "frequency": 0,
+      "description": "run Python 3"
+    },
+    {
+      "aliasName": "pv",
+      "command": "python3 -m venv venv",
+      "frequency": 0,
+      "description": "create virtual-env"
+    },
+    {
+      "aliasName": "pa",
+      "command": "source venv/bin/activate",
+      "frequency": 0,
+      "description": "activate venv"
+    },
+    {
+      "aliasName": "pde",
+      "command": "deactivate",
+      "frequency": 0,
+      "description": "deactivate venv"
+    },
+    {
+      "aliasName": "pipu",
+      "command": "pip install --upgrade",
+      "frequency": 0,
+      "description": "upgrade pip package"
+    },
+    {
+      "aliasName": "pipr",
+      "command": "pip install -r requirements.txt",
+      "frequency": 0,
+      "description": "install requirements"
+    },
+    {
+      "aliasName": "prun",
+      "command": "python3 -m pytest",
+      "frequency": 0,
+      "description": "run pytest"
+    },
+    {
+      "aliasName": "ps",
+      "command": "python3 -m http.server",
+      "frequency": 0,
+      "description": "serve folder locally"
+    },
+    {
+      "aliasName": "ll",
+      "command": "ls -alF --group-directories-first",
+      "frequency": 0,
+      "description": "list files"
+    },
+    {
+      "aliasName": "la",
+      "command": "ls -A",
+      "frequency": 0,
+      "description": "list almost all files"
+    },
+    {
+      "aliasName": "..",
+      "command": "cd ..",
+      "frequency": 0,
+      "description": "go up 1 level"
+    },
+    {
+      "aliasName": "...",
+      "command": "cd ../..",
+      "frequency": 0,
+      "description": "go up 2 levels"
+    },
+    {
+      "aliasName": "gs",
+      "command": "grep -R --color=auto",
+      "frequency": 0,
+      "description": "grep recursively"
+    },
+    {
+      "aliasName": "ff",
+      "command": "fzf",
+      "frequency": 0,
+      "description": "fuzzy finder"
+    },
+    {
+      "aliasName": "c",
+      "command": "clear",
+      "frequency": 0,
+      "description": "clear terminal"
+    },
+    {
+      "aliasName": "htop",
+      "command": "htop",
+      "frequency": 0,
+      "description": "interactive process viewer"
+    },
+    {
+      "aliasName": "ip4",
+      "command": "ip -4 addr",
+      "frequency": 0,
+      "description": "list IPv4 addresses"
+    },
+    {
+      "aliasName": "ip6",
+      "command": "ip -6 addr",
+      "frequency": 0,
+      "description": "list IPv6 addresses"
+    },
+    {
+      "aliasName": "vo",
+      "command": "code .",
+      "frequency": 0,
+      "description": "open project in VS Code"
+    },
+    {
+      "aliasName": "vd",
+      "command": "code --diff",
+      "frequency": 0,
+      "description": "launch diff view"
+    },
+    {
+      "aliasName": "vl",
+      "command": "code --install-extension",
+      "frequency": 0,
+      "description": "install extension by ID"
+    },
+    {
+      "aliasName": "vli",
+      "command": "code --list-extensions",
+      "frequency": 0,
+      "description": "list installed extensions"
+    },
+    {
+      "aliasName": "vuu",
+      "command": "code --uninstall-extension",
+      "frequency": 0,
+      "description": "uninstall extension by ID"
+    },
+    {
+      "aliasName": "vrw",
+      "command": "code --reload-window",
+      "frequency": 0,
+      "description": "reload current window"
+    },
+    {
+      "aliasName": "vdup",
+      "command": "code --install-extension ms-kubernetes-tools.vscode",
+      "frequency": 0,
+      "description": "install Kubernetes tooling"
+    },
+    {
+      "aliasName": "vedit",
+      "command": "code --goto",
+      "frequency": 0,
+      "description": "open file at given line&col"
+    },
+    {
+      "aliasName": "ser",
+      "command": "npx serve -s dist",
+      "frequency": 0,
+      "description": "serve 'dist' directory"
+    },
+    {
+      "aliasName": "stc",
+      "command": "serverless invoke local --function handler",
+      "frequency": 0,
+      "description": "invoke Serverless locally"
+    },
+    {
+      "aliasName": "rz",
+      "command": "rsync -avz --progress",
+      "frequency": 0,
+      "description": "fast file sync"
+    },
+    {
+      "aliasName": "rtail",
+      "command": "tail -f",
+      "frequency": 0,
+      "description": "follow file output"
+    },
+    {
+      "aliasName": "ttag",
+      "command": "git tag -a v0.1.0 -m",
+      "frequency": 0,
+      "description": "create annotated tag"
+    },
+    {
+      "aliasName": "pgan",
+      "command": "pnpm global add netlify-cli",
+      "frequency": 0,
+      "description": "install Netlify CLI"
+    },
+    {
+      "aliasName": "nda",
+      "command": "nvm use node",
+      "frequency": 0,
+      "description": "switch Node version"
+    },
+    {
+      "aliasName": "nmc",
+      "command": "npx create-react-app",
+      "frequency": 0,
+      "description": "create CRA project"
+    },
+    {
+      "aliasName": "lgf",
+      "command": "lsof -i :<port>",
+      "frequency": 0,
+      "description": "find process by port"
+    },
+    {
+      "aliasName": "kweb",
+      "command": "kubectl proxy",
+      "frequency": 0,
+      "description": "run local K8s proxy"
+    },
+    {
+      "aliasName": "envl",
+      "command": "env | sort",
+      "frequency": 0,
+      "description": "dump env vars sorted"
+    },
+    {
+      "aliasName": "mkd",
+      "command": "mkdir -pv",
+      "frequency": 0,
+      "description": "make directories (with parents)"
+    }
+  ]
+}
